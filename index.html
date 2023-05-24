@@ -124,10 +124,16 @@
 			var female = document.createElement("option");
 			female.value = "her";
 			female.textContent = "F";
+			var nonbinary = document.createElement("option");
+			nonbinary.value = "them";
+			nonbinary.textContent = "X";
 			wowselect.appendChild(male);
 			wowselect.appendChild(female);
+			wowselect.appendChild(nonbinary)
+			
 			temp.appendChild(label);
 			temp.appendChild(wowselect);
+			temp.appendChild(document.createElement("br"));
 			temp.appendChild(document.createElement("br"));
 			temp.appendChild(document.createElement("br"));
 			//names.insertBefore(temp, names.children[names.children.length-1]);
